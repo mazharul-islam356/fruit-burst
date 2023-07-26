@@ -23,6 +23,15 @@
       .lato-fonts{
         font-family: 'Lato', sans-serif;
       }
+
+      @media screen and (max-width:426px) {
+
+       
+        
+      }
+    
+
+
     </style>
   </head>
 
@@ -198,7 +207,7 @@
 
 
     <!-- banner bonus section -->
-      <section class="w-[65%] mx-auto py-14 bg-white relative bottom-28 rounded-2xl shadow">
+      <section class="w-[65%] hidden lg:block mx-auto py-14 bg-white relative bottom-28 rounded-2xl shadow">
 
         <div class="flex justify-around">
 
@@ -246,14 +255,14 @@
       <!-- Deal of the day section -->
       <section class="w-3/4 mx-auto py-14">
     
-        <div class="flex justify-between">
+        <div class="flex lg:flex-row flex-col justify-between">
 
-          <div class="w-1/2">
-            <h1 class="text-5xl font-extrabold lato-fonts pb-4">Deal of the day</h1>
-            <p class="text-sm font-normal lato-fonts">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <div class="lg:w-1/2  w-full mx-auto lg:mx-0">
+            <h1 class="lg:text-5xl text-2xl font-extrabold lato-fonts text-center lg:text-start pb-4">Deal of the day</h1>
+            <p class="text-sm font-normal mb-2 lato-fonts text-center lg:text-start">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <!-- countdown -->
-          <div class="  grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col lg:gap-5 gap-2 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:15;"></span>
@@ -376,10 +385,7 @@
                 </form>
                 </dialog>
 
-
                 </div>
-
-
 
                <!-- card 03 -->
                <div class="flex flex-col justify-center rounded-2xl items-center border-solid border-2 border-rgba(18, 18, 18, 0.10)">
@@ -470,7 +476,7 @@
 
         </div>
 
-          <button class="btn text-white lato-fonts font-extrabold btn-primary bg-[#F85559] border-0 ml-[525px] mt-6"> Shop All </button>
+          <button class="btn text-white lato-fonts font-extrabold btn-primary bg-[#F85559] border-0 lg:ml-[525px] mt-6 ml-[120px]"> Shop All </button>
 
       </section>
 
@@ -483,12 +489,12 @@
         <div class="">
 
 
-          <img class="bg-gradient-to-r from-[#00000080] to-[#00000000]" src="./images/team.png" alt="">
+          <img class="bg-cover w-[335px] h-[1340px] lg:w-auto lg:h-auto rounded-xl bg-gradient-to-r from-[#00000080] to-[#00000080]" src="./images/team.png" alt="">
 
-        <div class=" text-center text-white -mt-[450px]">
+        <div class=" text-center text-white lg:-mt-[450px] -mt-[1250px] ">
          
-          <h1 class="lato-fonts text-4xl pb-2 font-extrabold">Meet the team section</h1>
-          <p class="w-1/2 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h1 class="lato-fonts lg:text-4xl text-2xl pb-2 font-extrabold">Meet the team section</h1>
+          <p class="lg:w-1/2 lg:mx-auto w-full text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
           
           
@@ -496,7 +502,7 @@
 
               <!-- member -->
 
-          <div class="flex lg:flex-row flex-col items-center justify-center gap-20 mt-24">
+          <div class="flex lg:flex-row flex-col items-center justify-center gap-6 lg:gap-20 mt-24">
 
   <div>
     <img src="./images/member1.png" alt="">
@@ -553,29 +559,32 @@
       </section>
 
 
+
+
       <!-- Bonus section -->
 
       <section class="w-3/4 mx-auto py-14">
 
-        <div class="w-1/2 mx-auto">
+        <div class="lg:w-1/2 lg:mx-auto mt-8">
           <h1 class="font-extrabold text-4xl lato-fonts text-center">Why Choose Us</h1>
           <p class="text-center lato-fonts text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
+        <img class="block lg:hidden w-[260px] h-[245px] my-[125px] -mb-8 mt-6 ml-6" src="./images/whychoose1.png" alt="#">
 
         <!-- Full -->
 
-        <div class="flex justify-between">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-between">
 
 
 
           <!-- part01 -->
 
-        <div>
+        <div class="relative">
 
           
           <!-- icon + text -->
-          <div class="flex">
+          <div class="flex lg:flex-row flex-col justify-center items-center lg:justify-start lg:items-start">
 
             <!-- icon -->
             <div class="flex mt-16 mr-8" >
@@ -583,51 +592,57 @@
               <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
             </div>
             <!-- text -->
-            <div class="mt-11">
+            <div class="mt-11 text-center lg:text-start">
               <h4 class="font-bold pt-2">Dedicated team</h4>
-              <p class="w-[100px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
+              <p class="w-[100px] h-[1px] ml-[110px]  mt-2 lg:ml-0 bg-slate-600 mb-2"  ></p>
               <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
             </div>
           </div>
 
           <!-- icon + text -->
-          <div class="flex">
+          <div class="flex lg:flex-row flex-col justify-center items-center lg:justify-start lg:items-start">
 
             <!-- icon -->
-            <div class="flex mt-16 mr-8" >
+            <div class="flex mt-10 mr-8" >
               <p class="w-14 h-14 absolute  bg-slate-300 rounded-full"></p>
               <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
             </div>
             <!-- text -->
-            <div class="mt-11">
+            <div class="mt-11 text-center lg:text-start">
               <h4 class="font-bold pt-2">Dedicated team</h4>
-              <p class="w-[100px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
+              <p class="w-[100px] h-[1px] ml-[110px]  mt-2 lg:ml-0 bg-slate-600 mb-2"  ></p>
               <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
             </div>
           </div>
 
 
-          <!-- icon + text -->
-          <div class="flex">
+         <!-- icon + text -->
+         <div class="flex lg:flex-row flex-col justify-center items-center lg:justify-start lg:items-start">
 
-            <!-- icon -->
-            <div class="flex mt-16 mr-8" >
-              <p class="w-14 h-14 absolute  bg-slate-300 rounded-full"></p>
-              <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
-            </div>
-            <!-- text -->
-            <div class="mt-11">
-              <h4 class="font-bold pt-2">Dedicated team</h4>
-              <p class="w-[100px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
-              <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
-            </div>
+          <!-- icon -->
+          <div class="flex mt-10 mr-8" >
+            <p class="w-14 h-14 absolute  bg-slate-300 rounded-full"></p>
+            <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
           </div>
+          <!-- text -->
+          <div class="mt-11 text-center lg:text-start">
+            <h4 class="font-bold pt-2">Dedicated team</h4>
+            <p class="w-[100px] h-[1px] ml-[110px] mt-2 lg:ml-0 bg-slate-600 mb-2"  ></p>
+            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+          </div>
+        </div>
 
         </div>
 
 
-        <img class="w-[260px] h-[245px] my-[125px] mx-4" src="./images/whychoose1.png" alt="">
-        
+
+
+
+      <img class="absolute right-[640px] mt-24  w-[250px] h-[270px]" src="./images/whychoose1.png" alt="">
+
+
+
+
 
 
 
@@ -637,7 +652,7 @@
 
           
           <!-- icon + text -->
-          <div class="flex flex-row-reverse gap-4">
+          <div class="flex lg:flex-row flex-col justify-center gap-4 items-center lg:flex-row-reverse lg:justify-start lg:items-start">
 
             <!-- icon -->
             <div class="flex mt-16 mr-8" >
@@ -645,15 +660,15 @@
               <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
             </div>
             <!-- text -->
-            <div class="mt-11">
-              <h4 class="font-bold pt-2 pl-[222px]">Dedicated team</h4>
-              <p class="w-[100px] ml-[238px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
-              <p>Professional employees are there for you to pick <br> <span class="ml-24">the most amazing and fresh fruits.</span> </p>
+            <div class="mt-11 text-center lg:text-start">
+              <h4 class="font-bold flex lg:flex-row-reverse lg:pt-2 pl-[90px]">Dedicated team</h4>
+              <p class=" w-[100px] h-[1px] lg:ml-[238px] mt-2 bg-slate-600 mb-2"  ></p>
+              <p>Professional employees are there for you to pick <br> <span class="lg:ml-24">the most amazing and fresh fruits.</span></p>
             </div>
           </div>
 
           <!-- icon + text -->
-          <div class="flex flex-row-reverse gap-4">
+          <div class="flex lg:flex-row flex-col justify-center gap-4 items-center lg:flex-row-reverse lg:justify-start lg:items-start">
 
             <!-- icon -->
             <div class="flex mt-16 mr-8" >
@@ -661,16 +676,16 @@
               <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
             </div>
             <!-- text -->
-            <div class="mt-11">
-              <h4 class="font-bold pt-2 pl-[222px]">Dedicated team</h4>
-              <p class="w-[100px] ml-[238px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
-              <p>Professional employees are there for you to pick <br> <span class="ml-24">the most amazing and fresh fruits.</span> </p>
+            <div class="mt-11 text-center lg:text-start">
+              <h4 class="font-bold flex lg:flex-row-reverse lg:pt-2 pl-[90px]">Dedicated team</h4>
+              <p class=" w-[100px] h-[1px] lg:ml-[238px] mt-2 bg-slate-600 mb-2 ml-[98px] mt-2 lg:ml-0 "  ></p>
+              <p>Professional employees are there for you to pick <br> <span class="lg:ml-24">the most amazing and fresh fruits.</span></p>
             </div>
           </div>
 
 
-          <!-- icon + text -->
-          <div class="flex flex-row-reverse gap-4">
+           <!-- icon + text -->
+           <div class="flex lg:flex-row flex-col justify-center gap-4 items-center lg:flex-row-reverse lg:justify-start lg:items-start">
 
             <!-- icon -->
             <div class="flex mt-16 mr-8" >
@@ -678,10 +693,10 @@
               <i class="fa-solid relative top-4 text-[20px] text-center left-[1px] fa-people-group ml-4"></i>
             </div>
             <!-- text -->
-            <div class="mt-11">
-              <h4 class="font-bold pt-2 pl-[222px]">Dedicated team</h4>
-              <p class="w-[100px] ml-[238px] h-[1px] mt-2 bg-slate-600 mb-2"  ></p>
-              <p>Professional employees are there for you to pick <br> <span class="ml-24">the most amazing and fresh fruits.</span> </p>
+            <div class="mt-11 text-center lg:text-start">
+              <h4 class="font-bold flex lg:flex-row-reverse lg:pt-2 pl-[90px]">Dedicated team</h4>
+              <p class=" w-[100px] h-[1px] lg:ml-[238px] mt-2 bg-slate-600 mb-2 ml-[98px] mt-2 lg:ml-0 "  ></p>
+              <p>Professional employees are there for you to pick <br> <span class="lg:ml-24">the most amazing and fresh fruits.</span></p>
             </div>
           </div>
 
@@ -696,16 +711,16 @@
 
     <!-- footer -->
 
-    <footer class="w-full bg-black text-white h-[380px]">
+    <footer class="w-full bg-black text-white lg:h-[380px] h-[280px]">
 
-      <div class="flex justify-center pt-28 pb-6">
+      <div class="flex justify-center lg:pt-28 pt-20 lg:pb-6 pb-4">
 
-       <div class="w-10"> <img src="./images/logo.png" alt=""></div>
-       <h2 class="pl-2 text-3xl font-semibold lato-fonts">Fruit Burst</h2>
+       <div class="lg:w-10 w-8"> <img src="./images/logo.png" alt=""></div>
+       <h2 class="pl-2 lg:text-3xl text-2xl font-semibold lato-fonts">Fruit Burst</h2>
       </div>
       <!-- link -->
       <div>
-        <ul class="flex justify-center gap-8 pb-4" >
+        <ul class="flex lg:text-sm text-[13px] justify-center lg:gap-8 gap-4 lg:pb-4" >
           <li><a href="">Home</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Shop</a></li>
@@ -715,12 +730,12 @@
       </div>
 
       <!-- icons -->
-      <div class="text-[25px] text-center mt-8">
+      <div class="lg:text-[25px] text-[20px] text-center lg:mt-8 mt-6">
 
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands pl-4  fa-facebook"></i>
-        <i class="fa-brands pl-4  text-[30px] fa-youtube"></i>
-        <i class="fa-brands pl-4  text-[30px] fa-linkedin"></i>
+        <i class="fa-brands pl-4 lg:text-[30px] text-[25px] fa-youtube"></i>
+        <i class="fa-brands pl-4 lg:text-[30px] text-[25px] fa-linkedin"></i>
         <i class="fa-brands pl-4 fa-square-instagram"></i>
         <i class="fa-brands pl-4  fa-apple"></i>
 
