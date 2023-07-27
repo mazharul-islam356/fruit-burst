@@ -105,7 +105,10 @@
               
               <input type="lg:text" placeholder="Search here" class="input relative input-bordered w-full max-w-xs rounded-full ml-8" />
 
-              <i class="lg:absolute right-[275px] fa-solid fa-magnifying-glass"></i>
+              <i class="lg:absolute lg:right-[270px]
+              md:absolute
+              md:right-[130px]
+              fa-solid fa-magnifying-glass"></i>
             </div>
 
           </div>
@@ -117,134 +120,75 @@
 
       <!-- banner section -->
 
+
+
       <section class="lg:pb-14 w-3/4 mx-auto">
 
-        <!-- banner 01 -->
-        <div class="carousel w-full max-h-[600px]">
-          <div id="slide1" class="carousel-item  relative w-full">
-            
-            <img src="./images/banner1.png" class="w-full absolute" />
-            
-            <div class="absolute flex justify-center transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2">
-              
-              <a href="#slide4" class="btn btn-circle lg:mt-36 mt-48 ">❮</a> 
-              <!-- text -->
-              <div class="lg:mb-24 lg:w-1/2 mt-16 mx-auto lato-fonts">
-                <h1 class="text-white text-center font-extrabold lg:text-7xl text-xl">Exotic tastes at your
-                   doorstep</h1>
-                <p class="text-white text-center" >We supply highly quality organic products</p>
-                <button class="btn mb-6 ml-20 btn-xs bg-[#F85559] border-0 text-white lato-fonts lg:text-sm text-[10px] font-extrabold  lg:ml-56 lg:mt-6">Shop Now</button>
+        <div class="absolute">
+          <h1>Exotic tastes at your doorstep</h1>
+          <p>We supply highly quality organic products</p>
+        </div>
+
+        <div class="relative carousel w-full rounded-3xl">
+
+          <!-- banner01 -->
+
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+
+              <div class="w-3/4 absolute lg:left-36 left-9 lg:bottom-0 md:left-20 bottom-[-0.75rem] text-center">
+                <h1 class="lg:w-3/4 lg:mx-auto md:text-2xl lg:text-6xl font-extrabold text-white lato-fonts">Exotic tastes at your doorstep</h1>
+                <p class="lg:text-xl text-[10px] text-white">We supply highly quality organic products</p>
+
+                <button class="btn lg:px-4 btn-xs">Shop Now</button>
               </div>
-              
-              <a href="#slide2" class="btn btn-circle mt-48 lg:mt-36">❯</a>
-              
-              
+             
+
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div> 
 
-          <!-- banner 02 -->
+          <!-- banner02 -->
+
           <div id="slide2" class="carousel-item relative w-full">
             <img src="./images/banner2.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2">
-
-              <a href="#slide1" class="btn btn-circle mt-48 lg:mt-36">❮</a> 
-
-
-              <!-- text -->
-              <div class="lg:mb-24 lg:w-1/2 mt-16 mx-auto lato-fonts">
-                <h1 class="text-white text-center font-extrabold lg:text-7xl text-xl">Exotic tastes at your
-                   doorstep</h1>
-                <p class="text-white text-center" >We supply highly quality organic products</p>
-                <button class="btn mb-6 ml-20 btn-xs bg-[#F85559] border-0 text-white lato-fonts lg:text-sm text-[10px] font-extrabold  lg:ml-56 lg:mt-6">Shop Now</button>
-              </div>
-
-
-              <a href="#slide3" class="btn btn-circle mt-48 lg:mt-36">❯</a>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              
+              
+              <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div> 
 
-          <!-- banner 03 -->
+          <!-- banner03 -->
           <div id="slide3" class="carousel-item relative w-full">
             <img src="./images/banner3.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2">
-              <a href="#slide2" class="btn btn-circle mt-48 lg:mt-36">❮</a> 
-
-              <!-- text -->
-              <div class="lg:mb-24 lg:w-1/2 mt-16 mx-auto lato-fonts">
-                <h1 class="text-white text-center font-extrabold lg:text-7xl text-xl">Exotic tastes at your
-                   doorstep</h1>
-                <p class="text-white text-center" >We supply highly quality organic products</p>
-                <button class="btn mb-6 ml-20 btn-xs bg-[#F85559] border-0 text-white lato-fonts lg:text-sm text-[10px] font-extrabold  lg:ml-56 lg:mt-6">Shop Now</button>
-              </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
 
 
-              <a href="#slide4" class="btn btn-circle mt-48 lg:mt-36">❯</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          
-          <!-- banner 04 -->
+
+          <!-- banner04 -->
           <div id="slide4" class="carousel-item relative w-full">
             <img src="./images/banner4.png" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2">
-              <a href="#slide3" class="btn btn-circle mt-48 lg:mt-36">❮</a> 
-
-
-              <!-- text -->
-              <div class="lg:mb-24 lg:w-1/2 mt-16 mx-auto lato-fonts">
-                <h1 class="text-white text-center font-extrabold lg:text-7xl text-xl">Exotic tastes at your
-                   doorstep</h1>
-                <p class="text-white text-center" >We supply highly quality organic products</p>
-                <button class="btn mb-6 ml-20 btn-xs bg-[#F85559] border-0 text-white lato-fonts lg:text-sm text-[10px] font-extrabold  lg:ml-56 lg:mt-6">Shop Now</button>
-              </div>
-
-
-              <a href="#slide1" class="btn btn-circle mt-48 lg:mt-36">❯</a>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
         </div>
+
+
+
+
+        
     </section>
 
-
-
-    <!-- banner bonus section -->
-      <section class="w-[65%] hidden lg:block mx-auto py-14 bg-white relative bottom-28 rounded-2xl shadow">
-
-        <div class="flex justify-around">
-
-          <div>
-            <img src="./images/fruit1.png" alt="">
-              <p>Grapes</p>
-            </img>
-          </div>
-
-          <div>
-            <img src="./images/fruit2.png" alt="">
-              <p>Orange</p>
-            </img>
-          </div>
-
-          <div>
-            <img src="./images/fruit3.png" alt="">
-              <p>Mango</p>
-            </img>
-          </div>
-
-          <div>
-            <img src="./images/fruit4.png" alt="">
-              <p>Strawberry</p>
-            </img>
-          </div>
-          
-          <div>
-            <img src="./images/fruit5.png" alt="">
-              <p>Pomegranate</p>
-            </img>
-          </div>
-
-
-        </div>
-
-      </section>
 
     </header>
 
@@ -262,7 +206,7 @@
             <p class="text-sm font-normal mb-2 lato-fonts text-center lg:text-start">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <!-- countdown -->
-          <div class="grid grid-flow-col lg:gap-5 gap-2 text-center auto-cols-max">
+          <div class="grid grid-flow-col lg:gap-5 gap-2 md:ml-36 md:mt-2 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:15;"></span>
@@ -476,7 +420,7 @@
 
         </div>
 
-          <button class="btn text-white lato-fonts font-extrabold btn-primary bg-[#F85559] border-0 lg:ml-[525px] mt-6 ml-[120px]"> Shop All </button>
+          <button class="btn text-white lato-fonts font-extrabold btn-primary bg-[#F85559] border-0 lg:ml-[525px] mt-6 ml-[120px] md:ml-60"> Shop All </button>
 
       </section>
 
@@ -489,11 +433,11 @@
         <div class="">
 
 
-          <img class="bg-cover w-[335px] h-[1340px] lg:w-auto lg:h-auto rounded-xl bg-gradient-to-r from-[#00000080] to-[#00000080]" src="./images/team.png" alt="">
+          <img class="bg-cover w-[335px] h-[1340px] lg:w-auto lg:h-auto md:w-auto md:h-[800px] rounded-xl bg-gradient-to-r from-[#00000080] to-[#00000080]" src="./images/team.png" alt="">
 
-        <div class=" text-center text-white lg:-mt-[450px] -mt-[1250px] ">
+        <div class=" text-center text-white md:-mt-[680px]  lg:-mt-[450px] -mt-[1250px] ">
          
-          <h1 class="lato-fonts lg:text-4xl text-2xl pb-2 font-extrabold">Meet the team section</h1>
+          <h1 class="lato-fonts lg:text-4xl md:text-3xl text-2xl pb-2 font-extrabold">Meet the team section</h1>
           <p class="lg:w-1/2 lg:mx-auto w-full text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
           
@@ -502,14 +446,14 @@
 
               <!-- member -->
 
-          <div class="flex lg:flex-row flex-col items-center justify-center gap-6 lg:gap-20 mt-24">
+          <div class="grid lg:grid-cols-4 md:ml-20 md:mt-4 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-20 lg:mt-16 lg:ml-6">
 
   <div>
     <img src="./images/member1.png" alt="">
     <h3 class=" text-white text-[20px] pl-2 font-bold lato-fonts">Nazmul Islam</h3>
     <p class="text-[15px] pl-8 pb-1 text-white">Fruits Expert</p>
-    <div class="flex items-center justify-center gap-2 text-[20px]">
-      <i class="cursor-pointer fa-brands fa-facebook text-[#4267B2]"></i>
+    <div class="flex mr-20  justify-center gap-2 text-[20px]">
+      <i class="cursor-pointer fa-brands  fa-facebook text-[#4267B2]"></i>
     <i class="text-[#00acee] cursor-pointer fa-brands fa-twitter"></i>
     <i class="text-[#0A66C2] cursor-pointer fa-brands fa-linkedin"></i>
     </div>
@@ -520,7 +464,7 @@
     <img src="./images/member2.png" alt="">
     <h3 class=" text-white text-[20px] pl-2 font-bold lato-fonts">Shimla Akter</h3>
     <p class="text-[15px] pl-8 pb-1 text-white">Fruits Expert</p>
-    <div class="flex items-center justify-center gap-2 text-[20px]">
+    <div class="flex items-center justify-center mr-20 gap-2 text-[20px]">
       <i class="fa-brands cursor-pointer fa-facebook text-[#4267B2]"></i>
     <i class="text-[#00acee] cursor-pointer fa-brands fa-twitter"></i>
     <i class="text-[#0A66C2] cursor-pointer fa-brands fa-linkedin"></i>
@@ -532,7 +476,7 @@
     <img src="./images/member3.png" alt="">
     <h3 class=" text-white text-[20px] pl-2 font-bold lato-fonts">Fahim Ahmad</h3>
     <p class="text-[15px] pl-8 pb-1 text-white">Fruits Expert</p>
-    <div class="flex items-center justify-center gap-2 text-[20px]">
+    <div class="flex items-center justify-center mr-20 gap-2 text-[20px]">
       <i class="fa-brands fa-facebook cursor-pointer text-[#4267B2]"></i>
     <i class="text-[#00acee] cursor-pointer fa-brands fa-twitter"></i>
     <i class="text-[#0A66C2] cursor-pointer fa-brands fa-linkedin"></i>
@@ -544,7 +488,7 @@
     <img src="./images/member4.png" alt="">
     <h3 class=" text-white text-[20px] pl-2 font-bold lato-fonts">Sumaiya Akter</h3>
     <p class="text-[15px] pl-8 pb-1 text-white">Fruits Expert</p>
-    <div class="flex items-center justify-center gap-2 text-[20px]">
+    <div class="flex items-center justify-center mr-20 gap-2 text-[20px]">
       <i class="fa-brands fa-facebook cursor-pointer text-[#4267B2]"></i>
     <i class="text-[#00acee] cursor-pointer fa-brands fa-twitter"></i>
     <i class="text-[#0A66C2] cursor-pointer fa-brands fa-linkedin"></i>
